@@ -1,0 +1,40 @@
+<div class="min-h-screen bg-blue-100">
+  <div class="bg-blue-800 flex justify-center p-4">
+    <h4 class="text-white text-2xl font-bold">Blogee</h4>
+  </div>
+  <div class="pt-4 px-3">
+    <div class="flex flex-col items-center">
+      <div class="m-4 max-w-[50rem] border-2 rounded-2xl p-4 border-blue-800">
+        <div class="flex font-bold">
+          <span class="min-w-[6.5rem]">Title: </span> {{ post?.title }}
+        </div>
+        <div class="flex">
+          <span class="min-w-[6.5rem] font-bold">Content: </span>
+          <span class="text-justify">{{ post?.content }}</span>
+        </div>
+        <div class="flex flex-col justify-center">
+          <span class="text-center font-bold">Comments: </span>
+          <div class="flex justify-center" *ngIf="comments.length <= 0">
+            No Comments Yet
+          </div>
+          <div class="flex flex-col gap-3 text-sm" *ngIf="comments.length > 0">
+            <div *ngFor="let comment of comments">
+              {{ comments.length > 0 ? comment.comment : "No comments Yet" }}
+            </div>
+          </div>
+          <textarea
+            placeholder="Add Comment"
+            class="p-2 mt-10"
+            [(ngModel)]="new_comment"
+          ></textarea>
+          <button
+            class="bg-red-800 text-white font-bold px-3 py-2 rounded-lg shadow-xl hover:shadow-none mt-3"
+            (click)="postComment()"
+          >
+            Post Comment
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,43 @@
+<div class="bg-blue-100 min-h-screen h-full">
+  <app-header (searchEvent)="Filter($event)"></app-header>
+  <div class="my-4 px-4">
+    <div class="flex flex-col gap-2">
+      <button
+        class="bg-slate-800 text-white font-bold px-3 py-2 rounded-lg shadow-xl hover:shadow-none"
+        (click)="SetUi('create')"
+      >
+        Create New Post
+      </button>
+      <app-post-item
+        [ngClass]="ui == 'home' ? 'block' : 'hidden'"
+        *ngFor="let post of getCurrentItems()"
+        [post]="post"
+        (deleteEvent)="DeletePost($event)"
+      ></app-post-item>
+      <app-edit-create
+        [ngClass]="ui == 'edit' || ui == 'create' ? 'block' : 'hidden'"
+        (EditEvent)="EditPost($event)"
+        (CreateEvent)="CreatePost($event)"
+      ></app-edit-create>
+      <div
+        class="flex justify-between py-3"
+        [ngClass]="ui != 'home' ? 'hidden' : 'block'"
+      >
+        <button
+          class="border-2 rounded-lg border-slate-700 px-4 py-1 disabled:text-slate-500 disabled:border-slate-500"
+          [disabled]="currentPage <= 1"
+          (click)="setCurrentPage(currentPage - 1)"
+        >
+          Back
+        </button>
+        <button
+          class="border-2 rounded-lg border-slate-700 px-4 py-1 disabled:text-slate-500 disabled:border-slate-500"
+          (click)="setCurrentPage(currentPage + 1)"
+          [disabled]="currentPage >= TotalPage()"
+        >
+          Next
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

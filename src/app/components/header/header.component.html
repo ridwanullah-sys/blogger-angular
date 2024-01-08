@@ -1,0 +1,10 @@
+<div class="bg-blue-800 flex justify-between p-4">
+  <h4 class="text-white text-2xl font-bold">{{ title }}</h4>
+  <input
+    type="text"
+    placeholder="Search.."
+    class="outline-none p-2 rounded-lg title"
+    [(ngModel)]="search"
+    (ngModelChange)="searchTitle($event)"
+  />
+</div>

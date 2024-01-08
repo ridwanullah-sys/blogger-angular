@@ -1,0 +1,60 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "The Art of Web Developmentsss",
+      "content": "In the rapidly evolving world of web development, staying updated on the latest technologies is crucial. This post explores the art of crafting modern web applications using cutting-edge tools and frameworks.",
+      "publishedAt": "2024-01-06T10:30:00Z",
+      "updatedAt": "2024-01-07T21:42:05.632Z"
+    },
+    {
+      "id": 2,
+      "title": "Exploring Machine Learning in Healthcare",
+      "content": "Machine learning is revolutionizing the healthcare industry, from diagnostics to personalized treatment plans. Dive into the exciting applications and challenges of implementing ML in healthcare.",
+      "publishedAt": "2024-01-08T12:15:00Z",
+      "updatedAt": "2024-01-08T16:20:00Z"
+    },
+    {
+      "id": 4,
+      "title": "A Journey into Space Exploration",
+      "content": "Embark on a mesmerizing journey through the cosmos, exploring recent space missions, discoveries, and the ambitious plans for future interplanetary Asseeee",
+      "publishedAt": "2024-01-12T14:00:00Z",
+      "updatedAt": "2024-01-07T16:20:42.315Z"
+    },
+    {
+      "id": 6,
+      "title": "Traveling on a Budget: Tips and Trickssee",
+      "content": "Dreaming of exploring the world without breaking the bank? Learn practical tips and tricks for budget-friendly travel, from finding affordable accommodation to planning cost-effective itineraries.",
+      "publishedAt": "2024-01-18T08:30:00Z",
+      "updatedAt": "2024-01-07T21:42:32.272Z"
+    },
+    {
+      "id": 7,
+      "title": "The Impact of Climate Change on Biodiversityjj",
+      "content": "Climate change poses a significant threat to biodiversity worldwide. Explore the interconnected relationship between climate change and the loss of diverse ecosystems, along with potential solutions.",
+      "publishedAt": "2024-01-20T13:10:00Z",
+      "updatedAt": "2024-01-07T21:44:07.882Z"
+    },
+    {
+      "id": 8,
+      "title": "Mastering Productivity: Effective Time Management",
+      "content": "Unlock the secrets of effective time management and productivity. This post provides practical strategies and tools to optimize your daily routine and achieve your goals more efficiently.",
+      "publishedAt": "2024-01-22T10:00:00Z",
+      "updatedAt": "2024-01-22T14:15:00Z"
+    },
+    {
+      "id": 9,
+      "title": "The World of Virtual Reality: A Glimpse into VR Technology",
+      "content": "Virtual Reality (VR) is transforming how we experience digital content. Dive into the fascinating world of VR technology, exploring its applications in gaming, education, and beyond.",
+      "publishedAt": "2024-01-25T12:45:00Z",
+      "updatedAt": "2024-01-25T16:50:00Z"
+    },
+    {
+      "title": "Ajeeeeeeeeee",
+      "content": "Ajeeeeeeeeee",
+      "publishedAt": "2024-01-07T21:46:58.457Z",
+      "updatedAt": "2024-01-07T21:46:58.457Z",
+      "id": 10
+    }
+  ]
+}
